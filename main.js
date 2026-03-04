@@ -1,48 +1,48 @@
-// // ! Task 1
-// function displayDate() {
-//   //   let date = new Date();
+// ! Task 1
+function displayDate() {
+  // let date = new Date();
 
-//   //   document.write(` the day is : ${date.getDate()} <br>`);
-//   //   document.write(` the month is : ${date.getMonth() + 1} <br>`);
-//   //   document.write(` the year is : ${date.getFullYear()} <br>`);
-//   //   document.write(` the time is : ${date.toLocaleTimeString()} <br>`);
+  // document.write(` the day is : ${date.getDate()} <br>`);
+  // document.write(` the month is : ${date.getMonth() + 1} <br>`);
+  // document.write(` the year is : ${date.getFullYear()} <br>`);
+  // document.write(` the time is : ${date.toLocaleTimeString()} <br>`);
 
-//   // ? another solution
+  //   ? another solution
 
-//   const date = Temporal.Now.plainDateISO();
-//   const time = Temporal.Now.plainTimeISO();
+  const date = Temporal.Now.plainDateISO();
+  const time = Temporal.Now.plainTimeISO();
 
-//   document.write(` the day is : ${date.day} <br>`);
-//   document.write(` the month is : ${date.month} <br>`);
-//   document.write(` the year is : ${date.year} <br>`);
-//   document.write(` the time is : ${time.toString().split(".")[0]} <br>`);
-// }
+  document.write(` the day is : ${date.day} <br>`);
+  document.write(` the month is : ${date.month} <br>`);
+  document.write(` the year is : ${date.year} <br>`);
+  document.write(` the time is : ${time.toString().split(".")[0]} <br>`);
+}
 
 // ! Task 2
 
-// function openWindow() {
-//   setTimeout(function () {
-//     let myWindow = window.open("", "_blank", "width=400,height=400");
+function openWindow() {
+  setTimeout(function () {
+    let myWindow = window.open("", "_blank", "width=400,height=400");
 
-//     myWindow.document.write(`
-//       <h1>Advertising Window</h1>
-//       <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-//       <button onclick="window.close()">Close Me</button>
-//     `);
-//   }, 3000);
-// }
+    myWindow.document.write(`
+      <h1>Advertising Window</h1>
+      <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button onclick="window.close()">Close Me</button>
+    `);
+  }, 3000);
+}
 
 // ! Task 3
 
-// function evenOrOdd(num) {
-//   let regex = /^[0-9]*[02468]$/;
-//   return regex.test(num)
-//     ? document.write(` the num : ${num} is true`)
-//     : document.write(` the num : ${num} is false`);
-// }
+function evenOrOdd(num) {
+  let regex = /^[0-9]*[02468]$/;
+  return regex.test(num)
+    ? document.write(` the num : ${num} is true`)
+    : document.write(` the num : ${num} is false`);
+}
 
-// console.log(evenOrOdd("368746321"));
+console.log(evenOrOdd("368746321"));
 
 // ! Task 4
 
